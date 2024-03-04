@@ -34,6 +34,50 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+
+         
+            
+            
+                
+                Bird myBird = new Bird();
+
+                
+                myBird.Name = "Sparrow";
+                myBird.Age = 3;
+                myBird.WingSpan = 10.5;
+                myBird.CanFly = true;
+                myBird.NestLocation = "Tree";
+
+               
+                Console.WriteLine("Bird Details:");
+                Console.WriteLine($"Name: {myBird.Name}");
+                Console.WriteLine($"Age: {myBird.Age} years old");
+                Console.WriteLine($"Wing Span: {myBird.WingSpan} inches");
+                Console.WriteLine($"Can Fly: {(myBird.CanFly ? "Yes" : "No")}");
+                Console.WriteLine($"Nest Location: {myBird.NestLocation}");
+                myBird.MakeSound();
+                Console.WriteLine();
+
+                
+                Reptile myReptile = new Reptile();
+
+                
+                myReptile.Name = "Snake";
+                myReptile.Age = 5;
+                myReptile.IsColdBlooded = true;
+                myReptile.ScaleType = "Scales";
+                myReptile.LaysEggs = true;
+
+               
+                Console.WriteLine("Reptile Details:");
+                Console.WriteLine($"Name: {myReptile.Name}");
+                Console.WriteLine($"Age: {myReptile.Age} years old");
+                Console.WriteLine($"Is Cold-Blooded: {(myReptile.IsColdBlooded ? "Yes" : "No")}");
+                Console.WriteLine($"Scale Type: {myReptile.ScaleType}");
+                Console.WriteLine($"Lays Eggs: {(myReptile.LaysEggs ? "Yes" : "No")}");
+                myReptile.MakeSound();
+            }
         }
     }
-}
+    
+
